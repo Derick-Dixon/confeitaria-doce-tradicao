@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doce Tradição — Confeitaria Artesanal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="container">
+  <span class="logo">Doce Tradição</span>
+  <nav><a href="#cardapio">Cardápio</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
+</div></header>
+<main class="container">
+  <section class="hero">
+    <h1>Doces de forno, feitos como antigamente</h1>
+    <p>Bolos, tortas e biscoitos artesanais, com manteiga de verdade e receita de família.</p>
+    <a class="btn" href="#contato">Fazer encomenda</a>
+  </section>
+  <section id="cardapio">
+    <h2>Cardápio</h2>
+    <div class="grid">
+      <article class="card"><img src="img/bolo.svg" alt="Ilustração de um bolo rústico com cobertura de creme"><div class="card-body"><h3>Bolo de Fubá com Goiabada</h3><p>Massa macia de fubá e recheio de goiabada cremosa.</p><p class="preco">R$ 38</p></div></article>
+      <article class="card"><img src="img/torta.svg" alt="Ilustração de uma torta artesanal"><div class="card-body"><h3>Torta de Limão</h3><p>Massa amanteigada, creme de limão e merengue maçaricado.</p><p class="preco">R$ 52</p></div></article>
+      <article class="card"><img src="img/biscoito.svg" alt="Ilustração de biscoitos assados"><div class="card-body"><h3>Biscoitos Amanteigados</h3><p>Pacote com 12 unidades, assados no dia.</p><p class="preco">R$ 24</p></div></article>
+    </div>
+  </section>
+  <section id="sobre">
+    <h2>Sobre nós</h2>
+    <p>A Doce Tradição nasceu na cozinha de família. Usamos ingredientes simples, forno em temperatura baixa e muita paciência. Cada fornada é pequena de propósito.</p>
+  </section>
+  <section id="contato">
+    <h2>Contato</h2>
+    <form action="#">
+      <label for="nome">Nome</label><input id="nome" type="text" required>
+      <label for="email">E-mail</label><input id="email" type="email" required>
+      <label for="mensagem">Seu pedido</label><textarea id="mensagem" rows="4" required></textarea>
+      <button class="btn" type="submit">Enviar pedido</button>
+    </form>
+  </section>
+</main>
+<footer><p>© 2026 Doce Tradição — projeto acadêmico, Desenvolvimento de Interfaces (CEUB)</p></footer>
+</body>
+</html>
