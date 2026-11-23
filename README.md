@@ -11,8 +11,5 @@ Site de confeitaria artesanal, visual rústico (papel kraft, verde-oliva, mel), 
 ## Como rodar
 Abra o `index.html` da fase desejada no navegador. Não precisa instalar nada.
 
-## Como publicar (GitHub Pages)
-No repositório: **Settings → Pages → Branch: main / (root) → Save**. O site fica em `https://SEU-USUARIO.github.io/NOME-DO-REPO/fase-3/`.
-
 ## Ferramentas e IA
 HTML, CSS e JavaScript puros (sem framework). IA usada: Claude (Anthropic).
