@@ -1,0 +1,43 @@
+/* FASE 1 — base: variáveis de cor, layout, cartões, formulário, rodapé */
+:root{--bg:#F1E7D3;--surface:#E6D6B8;--text:#2E1D12;--primary:#3E4A2A;--on-primary:#F6EEDD;--accent:#7A4710;--field:#FBF7EE;--border:#3E4A2A}
+*{box-sizing:border-box}
+body{margin:0;font:1.0625rem/1.7 Georgia,serif;background:var(--bg);color:var(--text)}
+h1,h2,h3{font-family:Palatino,"Palatino Linotype","Book Antiqua",serif;line-height:1.2}
+a{color:var(--accent)}
+.container{max-width:1000px;margin:0 auto;padding:0 1.25rem}
+header{background:var(--primary);color:var(--on-primary)}
+header .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem;padding-block:1rem}
+header a{color:var(--on-primary);margin-left:1.25rem}
+.logo{font:italic 1.6rem Palatino,"Palatino Linotype",serif}
+.hero{margin-block:2rem;padding:3rem 1.5rem;border:3px double var(--primary);text-align:center}
+.hero h1{font-size:clamp(2rem,6vw,3.2rem);margin:0 0 .5rem}
+section{padding:2rem 0}
+.btn{display:inline-block;padding:.7rem 1.5rem;background:var(--primary);color:var(--on-primary);border:2px solid var(--primary);border-radius:4px;font:inherit;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--accent);border-color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:4px;overflow:hidden}
+.card img{display:block;width:100%;height:auto}
+.card-body{padding:1rem 1.25rem}
+.card h3{margin:0 0 .25rem}
+.preco{font-weight:bold;color:var(--accent)}
+form{display:grid;gap:.9rem;max-width:520px}
+label{font-weight:bold}
+input,textarea{width:100%;padding:.65rem;font:inherit;color:var(--text);background:var(--field);border:2px solid var(--border);border-radius:4px}
+footer{background:var(--primary);color:var(--on-primary);text-align:center;padding:1.5rem 1rem;margin-top:2rem}
+
+/* FASE 2 — modo escuro, abas, busca, carrossel */
+[data-theme=dark]{--bg:#1B1510;--surface:#2A2018;--text:#F1E7D3;--primary:#C9A15B;--on-primary:#1B1510;--accent:#E0B76B;--field:#120D09;--border:#C9A15B}
+body{transition:background .3s,color .3s}
+.mini{padding:.4rem .8rem;background:transparent;color:inherit;border:2px solid currentColor;border-radius:4px;font:inherit;cursor:pointer}
+.tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
+.tabs button{padding:.45rem 1.1rem;background:transparent;color:var(--text);border:2px solid var(--border);border-radius:999px;font:inherit;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--primary);color:var(--on-primary)}
+.hidden{display:none}
+.busca{max-width:340px}
+.carousel{position:relative;max-width:700px;margin:auto}
+.slide{display:none;margin:0}
+.slide.active{display:block}
+.slide img{width:100%;height:auto;border:1px solid var(--border)}
+.slide figcaption{text-align:center;padding:.5rem}
+.carousel .btn{position:absolute;top:40%;padding:.5rem .9rem}
+.prev{left:.5rem}.next{right:.5rem}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doce Tradição — Confeitaria Artesanal</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header><div class="container">
+  <span class="logo">Doce Tradição</span>
+  <nav><a href="#cardapio">Cardápio</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a></nav>
+  <button id="tema" class="mini">🌙 Escuro</button>
+</div></header>
+<main class="container">
+  <section class="hero">
+    <h1>Doces de forno, feitos como antigamente</h1>
+    <p>Bolos, tortas e biscoitos artesanais, com manteiga de verdade e receita de família.</p>
+    <a class="btn" href="#contato">Fazer encomenda</a>
+  </section>
+  <section id="como">
+    <h2>Como encomendar</h2>
+    <div class="grid">
+      <article class="card"><div class="card-body"><h3>1. Escolha</h3><p>Veja o cardápio e anote o que você quer levar.</p></div></article>
+      <article class="card"><div class="card-body"><h3>2. Combine</h3><p>Envie o pedido pelo formulário com 48 horas de antecedência.</p></div></article>
+      <article class="card"><div class="card-body"><h3>3. Retire</h3><p>Seu pedido sai do forno e fica pronto no horário combinado.</p></div></article>
+    </div>
+  </section>
+  <section id="cardapio">
+    <h2>Cardápio</h2>
+    <label for="busca">Buscar no cardápio</label><br>
+    <input id="busca" class="busca" type="search" placeholder="Ex.: limão">
+    <div class="tabs" role="group" aria-label="Categorias">
+      <button data-cat="todos" aria-pressed="true">Todos</button>
+      <button data-cat="bolo" aria-pressed="false">Bolos</button>
+      <button data-cat="torta" aria-pressed="false">Tortas</button>
+      <button data-cat="biscoito" aria-pressed="false">Biscoitos</button>
+    </div>
+    <div id="produtos" class="grid">
+      <article class="card" data-cat="bolo"><img src="img/bolo.svg" alt="Ilustração de um bolo rústico com cobertura de creme"><div class="card-body"><h3>Bolo de Fubá com Goiabada</h3><p>Massa macia de fubá e recheio de goiabada cremosa.</p><p class="preco">R$ 38</p></div></article>
+      <article class="card" data-cat="bolo"><img src="img/bolo.svg" alt="Ilustração de um bolo rústico com cobertura de creme"><div class="card-body"><h3>Bolo de Chocolate Rústico</h3><p>Cacau 70% e cobertura de brigadeiro de panela.</p><p class="preco">R$ 45</p></div></article>
+      <article class="card" data-cat="torta"><img src="img/torta.svg" alt="Ilustração de uma torta artesanal"><div class="card-body"><h3>Torta de Limão</h3><p>Massa amanteigada, creme de limão e merengue maçaricado.</p><p class="preco">R$ 52</p></div></article>
+      <article class="card" data-cat="torta"><img src="img/torta.svg" alt="Ilustração de uma torta artesanal"><div class="card-body"><h3>Torta de Maçã com Canela</h3><p>Maçãs assadas em fatias e massa folhada de manteiga.</p><p class="preco">R$ 48</p></div></article>
+      <article class="card" data-cat="biscoito"><img src="img/biscoito.svg" alt="Ilustração de biscoitos assados"><div class="card-body"><h3>Biscoitos Amanteigados</h3><p>Pacote com 12 unidades, assados no dia.</p><p class="preco">R$ 24</p></div></article>
+      <article class="card" data-cat="biscoito"><img src="img/biscoito.svg" alt="Ilustração de biscoitos assados"><div class="card-body"><h3>Broinhas de Coco</h3><p>Crocantes por fora e macias por dentro. Pacote com 10.</p><p class="preco">R$ 22</p></div></article>
+    </div>
+  </section>
+  <section id="galeria">
+    <h2>Galeria</h2>
+    <div class="carousel" aria-roledescription="carousel" aria-label="Galeria de doces">
+      <figure class="slide active"><img src="img/bolo.svg" alt="Ilustração de um bolo rústico com cobertura de creme"><figcaption>Bolos de forno</figcaption></figure>
+      <figure class="slide"><img src="img/torta.svg" alt="Ilustração de uma torta artesanal"><figcaption>Tortas da casa</figcaption></figure>
+      <figure class="slide"><img src="img/biscoito.svg" alt="Ilustração de biscoitos assados"><figcaption>Biscoitos do dia</figcaption></figure>
+      <button class="btn prev" aria-label="Slide anterior">‹</button>
+      <button class="btn next" aria-label="Próximo slide">›</button>
+    </div>
+  </section>
+  <section id="contato">
+    <h2>Contato</h2>
+    <form id="contato-form">
+      <label for="nome">Nome</label><input id="nome" type="text" required>
+      <label for="email">E-mail</label><input id="email" type="email" required>
+      <label for="mensagem">Seu pedido</label><textarea id="mensagem" rows="4" required></textarea>
+      <button class="btn" type="submit">Enviar pedido</button>
+      <p id="msg" role="status"></p>
+    </form>
+  </section>
+</main>
+<footer><p>© 2026 Doce Tradição — projeto acadêmico, Desenvolvimento de Interfaces (CEUB)</p></footer>
+</body>
+</html>
